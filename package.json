@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4",
+    "uuid": "^10.0.0"
+  },
+  "name": "tracechain",
+  "version": "1.0.0",
+  "description": "Hackathon ETHArg 2024, Blockchain Trace System. ",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nerdemma/tracechain.git"
+  },
+  "keywords": [
+    "blockchain",
+    "scroll",
+    "trace",
+    "cryptography",
+    "hackathon"
+  ],
+  "author": "Emmanuel D. Breyaue, Pablo E. Motto, Lucas E. Cariddi.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nerdemma/tracechain/issues"
+  },
+  "homepage": "https://github.com/nerdemma/tracechain#readme"
+}

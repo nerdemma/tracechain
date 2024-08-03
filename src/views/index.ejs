@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include ('./partials/header') %>
+<title>Tracechain</title>
+</head>
+
+<body>
+<%- include ('./partials/navigation') %>
+<main>
+<% trace.forEach(function(trace){ %>
+			<p><%= trace.title %></p>
+            <p><%= trace.description %></p>
+            <p><%= trace.date %></p>
+            <p><%= trace.coords %></p>
+<% }) %>
+</main>
+</body>

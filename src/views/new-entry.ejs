@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%- include('./partials/header')%>
+<title>Tracechain New Register</title>
+</head>
+
+<body>
+<%- include ('./partials/navigation')%>
+
+<h2>New Entry<h2>
+<form action='/new-entry'>
+
+    <input type="text" name="title" id="title" placeholder="Enter a new title">
+    <input type="text" name="date" id="date" placeholder="date of sent">
+    <input type="text" name="coords" id="date" placeholder="Coords">
+    <textarea name="description" id="description"></textarea>
+    <input type="submit" value="Save Register" class="btn btn-primary">
+
+</form>
+</body>
+<html>
