@@ -1,22 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<%- include('./partials/header')%>
-<title>Tracechain New Register</title>
+<title>Tracerchain</title>
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<%- include ('./partials/header') %>
 </head>
 
 <body>
-<%- include ('./partials/navigation')%>
+	<main class="flex-shrink-0">
+	<div class="container">
+		    <h1 class="mt-5">New Register</h1>
 
-<h2>New Entry<h2>
-<form action='/new-entry'>
-
-    <input type="text" name="title" id="title" placeholder="Enter a new title">
-    <input type="text" name="date" id="date" placeholder="date of sent">
-    <input type="text" name="coords" id="date" placeholder="Coords">
-    <textarea name="description" id="description"></textarea>
-    <input type="submit" value="Save Register" class="btn btn-primary">
-
-</form>
-</body>
-<html>
+	<%- include ('./partials/form') %>
+	</div>
+	</main>
+	</body>
+</html>

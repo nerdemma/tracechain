@@ -1,6 +1,7 @@
 
 const { Router } = require('express');
-const { render } = require('../app')
+const { render } = require('../app');
+
 const router = Router();
 const fs = require('fs');
 const { v4: uuidv4 } = require('uuid'); 
@@ -13,8 +14,7 @@ router.get('/',(req, res) =>
     res.render('index',{ trace });
     });
 
-    router.get('/new-entry', (req,res) =>
-    {
+    router.get('/new-entry', (req, res) =>{
     res.render('new-entry');    
     });
       
@@ -27,7 +27,7 @@ router.post('/new-entry', (req, res) => {
     }
 
     let newReg = {
-        id: uuidv4(),
+        id:uuidv4(),
         title,
         date,
         coords,
@@ -36,7 +36,7 @@ router.post('/new-entry', (req, res) => {
 
     trace.push(newReg);
     const json_trace = JSON.stringify(trace);
-    fs.writeFileSync('../src/trace.json', json_trace, 'utf-8');
+    fs.writeFileSync('../src/trace.json',json_trace,'utf-8');
     res.redirect('/');
 });
 

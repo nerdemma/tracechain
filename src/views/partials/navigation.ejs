@@ -1,5 +1,30 @@
-<ul>
-<li><a href="/"> Home </a></li>
-<li><a href="/new-entry"> New Register </a></li>
-<li><a href="/about"> About </a></li>
-</ul>
+	<main>
+<table class="table">
+  <thead class="dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Date</th>
+      <th scope="col">Coords</th>
+      <th scope="col">Options</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+<% trace.forEach(function(trace){ %>
+<tr>
+			<td><%= trace.id %></td>
+			<td><%= trace.title %></td>
+            <td><%= trace.description %></td>
+            <td><%= trace.date %></td>
+            <td><%= trace.coords %></td>
+            <td>new/edit/delete</td>
+</tr>
+<% }) %>
+  
+  
+    </tbody>
+</table>
+</main>
